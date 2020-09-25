@@ -2,42 +2,49 @@ import React, { Component } from 'react';
 import CardList from '../components/CardList';
 import Searchbox from '../components/Searchbox';
 import './App.css';
+import { connect } from 'react-redux';
+import { requestRobotsAction, setSearchField } from '../actions';
 
+
+const mapStateToProps = (state) => {
+    return {
+        searchField: state.searchRobots.searchField,
+        robots: state.requestRobotsReducer.robots,
+        isPending: state.requestRobotsReducer.isPending,
+        error: state.requestRobotsReducer.error
+    };
+
+}
+
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+        onRequestRobots: () => requestRobotsAction(dispatch)
+    }
+}
 
 class App extends Component {
-    constructor() {
-        super()
-        this.state = {
-            robotsarray: [],
-            searchfield: '',
-        }
-    }
-
-
-    onSearchChange = (event) => {
-        this.setState({ searchfield: event.target.value });
-    }
-
+   
     componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
-            .then(users => this.setState({ robotsarray: users }))
+            this.props.onRequestRobots();
     }
 
 
     render() {
         //Appearntly we can't have const or define variables that aren't functions 
         //unless it's under render.
-        const {robotsarray,searchfield} = this.state;
-        const filtered = robotsarray.filter(robot => {
-            return robot.name.toLowerCase().includes(searchfield.toLowerCase());
+        
+        const { onSearchChange, searchField,robots,isPending } = this.props;
+        const filtered = robots.filter(robot => {
+            return robot.name.toLowerCase().includes(searchField.toLowerCase());
         })
 
-        if (robotsarray.length === 0) {
+        if (isPending) {
             return (
                 <div className="tc">
                     <h1 className="ma2 f1 ">RoboFriends</h1>
-                    <Searchbox SearchChange={this.onSearchChange} />
+                    <Searchbox SearchChange={onSearchChange} />
                     <div>
                         <h1 className="ma2 f1 ">Loading..</h1>
                     </div>
@@ -48,7 +55,7 @@ class App extends Component {
             return (
                 <div className="tc main">
                     <h1 className="ma2 f1 ">RoboFriends</h1>
-                    <Searchbox SearchChange={this.onSearchChange} />
+                    <Searchbox SearchChange={onSearchChange} />
                     <div style={{ overflowY: 'scroll', height: '500px', border: '2px solid grey' }}>
                         <CardList robots={filtered} />
                     </div>
@@ -59,4 +66,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
