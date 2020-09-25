@@ -1,6 +1,6 @@
 can be viewed here : https://thabetsabha.github.io/SearchableRobots/
 
-*Simple app created to practice basic react/js concepts.
+*Simple app created to practice basic React/JS/Redux concepts.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
