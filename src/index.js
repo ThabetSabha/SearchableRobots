@@ -6,7 +6,7 @@ import {createStore,applyMiddleware,combineReducers} from 'redux';
 import * as serviceWorker from './serviceWorker';
 import 'tachyons';
 import App from './containers/App';
-import { searchRobots,requestRobotsReducer } from './reducer';
+import { searchRobots,requestRobotsReducer } from './redux/reducer';
 import {createLogger} from 'redux-logger';
 
 
@@ -27,4 +27,4 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.register();

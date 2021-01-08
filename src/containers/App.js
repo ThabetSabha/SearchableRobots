@@ -3,7 +3,7 @@ import CardList from '../components/CardList';
 import Searchbox from '../components/Searchbox';
 import './App.css';
 import { connect } from 'react-redux';
-import { requestRobotsAction, setSearchField } from '../actions';
+import { requestRobotsAction, setSearchField } from '../redux/actions';
 
 
 const mapStateToProps = (state) => {
