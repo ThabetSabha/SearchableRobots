@@ -1,6 +1,6 @@
 can be viewed here : https://thabetsabha.github.io/SearchableRobots/
 
-* A playground project used to practice React, Redux, TypeScript, Jest and Github Actions.
+* A playground project used to practice React, Redux and TypeScript, as well as unit testing with Jest and CI/CD using Github Actions.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
