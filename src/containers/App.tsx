@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import CardList from "../components/CardList";
-import Searchbox from "../components/Searchbox";
+import CardList from "../components/CardList/CardList";
+import Searchbox from "../components/SearchBox/Searchbox";
 import "./App.css";
 import { RootStateOrAny, useDispatch, useSelector } from "react-redux";
 import { requestRobotsAction, setSearchField } from "../redux/actions";
@@ -9,7 +9,7 @@ const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    requestRobotsAction(dispatch);
+    dispatch(requestRobotsAction());
   }, [dispatch]);
 
   const onSearchChange = (event: React.SyntheticEvent): void => {

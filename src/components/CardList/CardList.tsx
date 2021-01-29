@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../Card/Card";
 
-const CardList = ({ robots }: { robots: Array<IRobot> }) => {
+const CardList = ({ robots }: CardListProps) => {
   return (
     <>
       {robots.map((user) => {

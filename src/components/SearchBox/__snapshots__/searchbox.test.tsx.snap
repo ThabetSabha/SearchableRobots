@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Searchbox/> That the SearchBox Component Renders 1`] = `
+<Fragment>
+  <input
+    aria-label="search Robots"
+    className="pa3 ma4 ba b--green bg-lightest-blue robots-search-input"
+    onChange={[MockFunction]}
+    placeholder="Search Robots"
+    type="search"
+  />
+</Fragment>
+`;

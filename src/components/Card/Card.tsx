@@ -1,11 +1,5 @@
 import React from "react";
 
-interface CardProps {
-  id: number;
-  name: string;
-  email: string;
-}
-
 const Card = ({ id, name, email }: CardProps) => {
   return (
     <div
