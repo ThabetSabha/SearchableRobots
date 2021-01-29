@@ -7,24 +7,23 @@ import thunk from "redux-thunk";
 
 const mockStore = configureMockStore([thunk]);
 describe("Testing App component", () => {
-    test("That the App Component Renders", () => {
-        const store = mockStore({
-          searchRobots: {
-            searchField: "",
-          },
-          requestRobotsReducer: {
-              isPending: false,
-              robots: [],
-              error: "",
-          },
-        });
-      
-        const wrapper = mount(
-          <Provider store={store}>
-            <App />
-          </Provider>
-        );
-        expect(wrapper).toMatchSnapshot();
-      });
-    
-})
+  test("That the App Component Renders", () => {
+    const store = mockStore({
+      searchRobots: {
+        searchField: "",
+      },
+      requestRobotsReducer: {
+        isPending: false,
+        robots: [],
+        error: "",
+      },
+    });
+
+    const wrapper = mount(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+});
