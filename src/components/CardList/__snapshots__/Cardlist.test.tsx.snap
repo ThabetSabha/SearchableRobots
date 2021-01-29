@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`That the Card Component Renders 1`] = `
+<Fragment>
+  <Card
+    email="Test@gmail.com"
+    id={1}
+    key="1"
+    name="Test"
+  />
+</Fragment>
+`;

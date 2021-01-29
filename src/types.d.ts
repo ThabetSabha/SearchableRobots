@@ -26,5 +26,22 @@ interface ISearchState {
 interface IFetchRobotsState {
   isPending: boolean;
   robots: Array<IRobot>;
-  error: "";
+  error: string;
+}
+
+
+
+//Props that get passed to Components
+interface CardProps {
+  id: number;
+  name: string;
+  email: string;
+}
+
+interface CardListProps {
+  robots: Array<IRobot>;
+}
+
+interface SearchBoxProps {
+  searchChange(event: React.SyntheticEvent<HTMLInputElement>): void;
 }

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing App component That the App Component Renders 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <App>
+    <div
+      className="tc main"
+    >
+      <h1
+        className="ma2 f1 "
+      >
+        RoboFriends
+      </h1>
+      <Searchbox
+        searchChange={[Function]}
+      >
+        <input
+          aria-label="search Robots"
+          className="pa3 ma4 ba b--green bg-lightest-blue robots-search-input"
+          onChange={[Function]}
+          placeholder="Search Robots"
+          type="search"
+        />
+      </Searchbox>
+      <div
+        style={
+          Object {
+            "border": "2px solid grey",
+            "height": "500px",
+            "overflowY": "scroll",
+          }
+        }
+      >
+        <CardList
+          robots={Array []}
+        />
+      </div>
+    </div>
+  </App>
+</Provider>
+`;
