@@ -29,8 +29,6 @@ interface IFetchRobotsState {
   error: string;
 }
 
-
-
 //Props that get passed to Components
 interface CardProps {
   id: number;
