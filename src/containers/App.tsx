@@ -34,7 +34,7 @@ const App = () => {
   return (
     <div className="tc main">
       <h1 className="ma2 f1 ">RoboFriends</h1>
-
+      <Searchbox searchChange={onSearchChange} />
       <div
         style={{
           overflowY: "scroll",
