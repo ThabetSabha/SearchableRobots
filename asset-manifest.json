@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/SearchableRobots/static/css/main.4f3843c9.chunk.css",
-    "main.js": "/SearchableRobots/static/js/main.28dd053b.chunk.js",
-    "main.js.map": "/SearchableRobots/static/js/main.28dd053b.chunk.js.map",
+    "main.css": "/SearchableRobots/static/css/main.bce156f6.chunk.css",
+    "main.js": "/SearchableRobots/static/js/main.4d347d7a.chunk.js",
+    "main.js.map": "/SearchableRobots/static/js/main.4d347d7a.chunk.js.map",
     "runtime-main.js": "/SearchableRobots/static/js/runtime-main.d99953dc.js",
     "runtime-main.js.map": "/SearchableRobots/static/js/runtime-main.d99953dc.js.map",
     "static/css/2.3c03f26f.chunk.css": "/SearchableRobots/static/css/2.3c03f26f.chunk.css",
-    "static/js/2.a897ee1d.chunk.js": "/SearchableRobots/static/js/2.a897ee1d.chunk.js",
-    "static/js/2.a897ee1d.chunk.js.map": "/SearchableRobots/static/js/2.a897ee1d.chunk.js.map",
+    "static/js/2.07b68e76.chunk.js": "/SearchableRobots/static/js/2.07b68e76.chunk.js",
+    "static/js/2.07b68e76.chunk.js.map": "/SearchableRobots/static/js/2.07b68e76.chunk.js.map",
     "index.html": "/SearchableRobots/index.html",
-    "precache-manifest.ed293e33711ea73674dd0ada8dab8fa9.js": "/SearchableRobots/precache-manifest.ed293e33711ea73674dd0ada8dab8fa9.js",
+    "precache-manifest.3fc242f888c4e57bacb25f8cff06fa69.js": "/SearchableRobots/precache-manifest.3fc242f888c4e57bacb25f8cff06fa69.js",
     "service-worker.js": "/SearchableRobots/service-worker.js",
     "static/css/2.3c03f26f.chunk.css.map": "/SearchableRobots/static/css/2.3c03f26f.chunk.css.map",
-    "static/css/main.4f3843c9.chunk.css.map": "/SearchableRobots/static/css/main.4f3843c9.chunk.css.map",
-    "static/js/2.a897ee1d.chunk.js.LICENSE.txt": "/SearchableRobots/static/js/2.a897ee1d.chunk.js.LICENSE.txt",
+    "static/css/main.bce156f6.chunk.css.map": "/SearchableRobots/static/css/main.bce156f6.chunk.css.map",
+    "static/js/2.07b68e76.chunk.js.LICENSE.txt": "/SearchableRobots/static/js/2.07b68e76.chunk.js.LICENSE.txt",
     "static/media/App.css": "/SearchableRobots/static/media/SEGA.12a3db8b.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.d99953dc.js",
     "static/css/2.3c03f26f.chunk.css",
-    "static/js/2.a897ee1d.chunk.js",
-    "static/css/main.4f3843c9.chunk.css",
-    "static/js/main.28dd053b.chunk.js"
+    "static/js/2.07b68e76.chunk.js",
+    "static/css/main.bce156f6.chunk.css",
+    "static/js/main.4d347d7a.chunk.js"
   ]
 }
